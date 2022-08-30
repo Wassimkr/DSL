@@ -1,3 +1,6 @@
+"
+Cette classe va contenir notre Die avec différents faces.
+"
 Class {
 	#name : #DieHandle,
 	#superclass : #Object,
@@ -8,7 +11,17 @@ Class {
 }
 
 { #category : #initialization }
-DieHandle >> initialize: coll [	
+DieHandle >> addDie: aDie [ 
+	dice add: aDie
+]
+
+{ #category : #initialization }
+DieHandle >> diceNumber [
+	^ dice size
+]
+
+{ #category : #initialization }
+DieHandle >> initialize [ 	
 	super initialize.
-	dice := coll
+	dice := OrderedCollection new.
 ]

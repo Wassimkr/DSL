@@ -18,6 +18,11 @@ Die class >> withFaces: anInteger [
 	^ d
 ]
 
+{ #category : #'as yet unclassified' }
+Die >> add: aCollection [ 
+	^ aCollection
+]
+
 { #category : #accesing }
 Die >> faces [
 	^ faces
